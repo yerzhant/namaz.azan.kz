@@ -1,4 +1,4 @@
-package com.example.azan_kz;
+package kz.azan;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
