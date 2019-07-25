@@ -38,7 +38,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "kz.azan"
+        applicationId "kz.azan.site"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
@@ -58,11 +58,9 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.release
-
-            minifyEnabled true
-            useProguard true
-
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // minifyEnabled true
+            // useProguard true
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }

@@ -1,4 +1,4 @@
-package kz.azan;
+package kz.azan.site;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
