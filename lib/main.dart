@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-void main() => runApp(AzanApp());
+void main() => runApp(NamazApp());
 
-class AzanApp extends StatelessWidget {
+class NamazApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FlutterStatusbarcolor.setStatusBarColor(Color(0xF01BA2DD));
     return MaterialApp(
-      title: 'Азан.қаз',
+      title: 'Намаз',
       home: HomePage(),
     );
   }
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
     return WillPopScope(
       child: SafeArea(
         child: WebView(
-          initialUrl: 'https://azan.kz',
+          initialUrl: 'https://azan.kz/namaz',
           javascriptMode: JavascriptMode.unrestricted,
           onWebViewCreated: (WebViewController controller) {
             _controller.complete(controller);
